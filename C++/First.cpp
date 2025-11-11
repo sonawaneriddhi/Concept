@@ -1,30 +1,34 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
-int Addition(int iNo1, int iNo2)
+class Demo
 {
-    int iAns = 0;
-    iAns = iNo1 + iNo2;
-    return iAns;
-}
+    public:
 
-int Substraction(int iNo1, int iNo2)
-{
-    int iAns = 0;
-    iAns = iNo1 - iNo2;
-    return iAns;
-}
+        int iNo1;
+        int iNo2;
+
+        Demo()
+        {
+            iNo1 = 0;
+            iNo2 = 0;
+        }
+
+        Demo(int a, int b)
+        {
+            iNo1 = a;
+            iNo2 = b;
+        }
+
+        ~Demo()
+        {
+            //Logic
+        }
+};
 
 int main()
 {
-    int iRet = 0;
-
-    iRet = Addition(11,10);
-
-    printf("Addition is : %d\n",iRet);
-
-    iRet = Substraction(11,10);
-
-    printf("Substraction is : %d\n",iRet);
+    cout<<"Jay Ganesh...\n";
 
     return 0;
 }
